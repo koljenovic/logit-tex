@@ -16,8 +16,8 @@
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
 	\begin{tikzpicture}[overlay,remember picture]
-      \node[anchor=north west, outer sep=3.5em] at (current page.north west)
-	              {\includegraphics[width=7cm]{material/etf_logo.png}};
+%      \node[anchor=north west, outer sep=3.5em] at (current page.north west)
+%	              {\includegraphics[width=7cm]{material/etf_logo.png}};
       \node[anchor=north east, outer sep=3em] at (current page.north east)
 	              {};
 	\end{tikzpicture}
@@ -25,18 +25,18 @@
 %    \vspace*{1cm}
 %    {\LARGE\sffamily\scshape\@faculty\par}
 %    {\LARGE\sffamily\scshape\@university\unskip\strut\par}
-    \vspace*{1.5cm}
+    \vspace*{1.2cm}
     \includegraphics[width=5cm]{material/unsa.png}\par
     \vspace*{2cm}
     {\Huge\bfseries\sffamily\@title\unskip\strut\par}
     {\scshape\huge\sffamily\@thesistype\unskip\strut\uppercase\par}
-    \vspace*{0.5cm}
+    \vspace*{1cm}
     {\Large\sffamily\itshape Autor:} {\Large\sffamily\@author\unskip\strut\par}
     {\Large\sffamily\@department\unskip\strut\par}
     {\Large\sffamily\scshape\@faculty\unskip\strut\par}
     \vspace*{1cm}
     {\Large\sffamily\itshape Mentor:} {\Large\sffamily\@mentor\unskip\strut\par}
-    \vspace*{2.3cm}
+    \vspace*{2.1cm}
     {\Large\sffamily\@date\par}
   \end{center}
 \end{titlepage}
