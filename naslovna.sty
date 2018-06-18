@@ -1,0 +1,44 @@
+\ProvidesPackage{naslovna}[]
+\RequirePackage{graphicx}
+\RequirePackage{tikz}
+
+\def\@mentor{}
+\newcommand{\mentor}[1]{\def\@mentor{#1}}
+\def\@department{}
+\newcommand{\department}[1]{\def\@department{#1}}
+\def\@faculty{}
+\newcommand{\faculty}[1]{\def\@faculty{#1}}
+\def\@university{}
+\newcommand{\university}[1]{\def\@university{#1}}
+\def\@thesistype{}
+\newcommand{\thesistype}[1]{\def\@thesistype{#1}}
+
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+	\begin{tikzpicture}[overlay,remember picture]
+      \node[anchor=north west, outer sep=3.5em] at (current page.north west)
+	              {\includegraphics[width=7cm]{material/etf_logo.png}};
+      \node[anchor=north east, outer sep=3em] at (current page.north east)
+	              {};
+	\end{tikzpicture}
+  \begin{center}
+%    \vspace*{1cm}
+%    {\LARGE\sffamily\scshape\@faculty\par}
+%    {\LARGE\sffamily\scshape\@university\unskip\strut\par}
+    \vspace*{1.5cm}
+    \includegraphics[width=5cm]{material/unsa.png}\par
+    \vspace*{2cm}
+    {\Huge\bfseries\sffamily\@title\unskip\strut\par}
+    {\scshape\huge\sffamily\@thesistype\unskip\strut\uppercase\par}
+    \vspace*{0.5cm}
+    {\Large\sffamily\itshape Autor:} {\Large\sffamily\@author\unskip\strut\par}
+    {\Large\sffamily\@department\unskip\strut\par}
+    {\Large\sffamily\scshape\@faculty\unskip\strut\par}
+    \vspace*{1cm}
+    {\Large\sffamily\itshape Mentor:} {\Large\sffamily\@mentor\unskip\strut\par}
+    \vspace*{2.3cm}
+    {\Large\sffamily\@date\par}
+  \end{center}
+\end{titlepage}
+}
+\endinput

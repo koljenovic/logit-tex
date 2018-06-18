@@ -1,0 +1,69 @@
+\documentclass[a4paper,11pt,titlepage]{report}
+\pagestyle{plain}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\usepackage{draftwatermark}
+\usepackage{listings}
+\usepackage[toc,page]{appendix}
+\usepackage[croatian]{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage{graphicx}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\usepackage{titlesec}
+\usepackage{naslovna}
+
+\input{layout}
+
+\linespread{1.5}
+
+\renewcommand{\abstractname}{Abstract}
+\renewcommand{\contentsname}{Sadržaj}
+\renewcommand{\figurename}{Prikaz}
+\renewcommand{\tablename}{Tabela}
+\renewcommand{\chaptername}{}
+\renewcommand{\bibname}{Literatura}
+\renewcommand\lstlistlistingname{Indeks listinga}
+\renewcommand\listfigurename{Indeks prikaza}
+\renewcommand\listtablename{Indeks tabela}
+\renewcommand\appendixname{Dodatak}
+\renewcommand\appendixpagename{Dodaci}
+\renewcommand\appendixtocname{Dodatak}
+
+\SetWatermarkText{}
+\SetWatermarkScale{0.8}
+
+\title{Aplikacija za evidentiranje prisustva}
+\author{Malik Koljenović, BSc IT}
+\thesistype{Master teza}
+\mentor{prof. dr. Saša Mrdović}
+\department{Odsjek za računarstvo i informatiku}
+\faculty{Elektrotehnički fakultet}
+\university{Univerzitet u Sarajevu}
+\date{Sarajevo, juni 2018}
+
+\begin{document}
+	\input{special/s1-naslovna}
+	\input{special/s2-apstrakt}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\input{chapters/c1-uvod}
+	\input{chapters/c2-problem}
+	\input{chapters/c3-rjesenje}
+	\input{chapters/c4-tehnologija}
+	\input{chapters/c5-implementacija}
+	\input{chapters/c6-zakljucak}
+	
+	\begin{appendices}
+		\input{appendices/a1-uputstvo}
+		\input{appendices/a2-model}
+		\input{appendices/a3-api}
+	\end{appendices}
+	
+	\bibliographystyle{ieeetr}
+	\bibliography{main}
+\end{document}
