@@ -1,0 +1,21 @@
+title Uspješna registracija (generisanje ključeva)
+Korisnik->UI: (1) Pokretanje
+UI->LAPI: (2) Inicijalizacija
+LAPI->Zamger: (3) Autentifikacija
+Zamger->LAPI: (4) Odgovor
+LAPI->UI: (5) Potvrda
+UI->Korisnik: (6) Uspjeh
+
+title Bilježenje prisustva (BUMP)
+Korisnik->UI: (1) Pokretanje
+UI->Master: (2) Master mod
+Slave-->Master: (3) **BUMP Event**
+Slave-->Master: (3.1) Slanje SPIM
+Master->UI: (4) Provjeri valjanost
+UI->Korisnik: (5) Prijavi ishod
+
+title Prijava prisustva (BUMP)
+Student->UI: (1) Upali ekran
+UI->Slave: (2) Generiši SPIM
+Slave<-->Master: (3) **BUMP Event**
+Slave->Master: (3.1) Slanje SPIM
