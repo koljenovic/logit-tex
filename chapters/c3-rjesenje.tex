@@ -10,30 +10,47 @@ Priloženi dijagrami interakcije osnovnih funkcionalnosti Logit platforme i prip
 \subsection*{Registracija korisnika}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{material/dia/01_registracija}
+    \includegraphics[width=0.7\textwidth]{material/dia/01_registracija}
     \caption{Dijagram interakcije - uspješna registracija korisnika i generisanje ključeva}
 \end{figure}
+\paragraph*{}
+Nakon uspješne instalacije aplikacije na korisnički Android uređaj (DEVICE) potrebno je obaviti proces registracije koji se izvršava u dva bitna koraka. Prvi korak sastoji se od unosa već postojećih autentifikacijskih podataka za ZAMGER sistem Elektrotehničkog fakulteta, korisnik se korištenjem datih podataka posredstvom LAPI servisa autentificira na ZAMGER sistemu, bitno je napomenuti da Logit platforma ne sprema korisničku lozinku ZAMGER sistema, navedeni podaci se koriste isključivo za povezivanje postojećeg identiteta i novogenerisanog para korisničkih RSA ključeva (KEYS), što je ujedno i drugi korak u procesu registracije na Logit platformu.
+
+\paragraph*{}
+U slučaju uspješnje autentifikacije, korisnika se obavještava o završenoj registraciji te se preusmjerava na glavni ekran za bilježenje prisustva. Generisani javni ključ (CERT) i identifikacioni podaci korisnika spremaju se u LAPI direktorij korisničkih certifikata.
 
 \subsection*{Bilježenje prisustva studenta}
+\paragraph*{}
+Bilježenje prisustva studenata od strane predmetnog nastavnika izvodi se u Master (M) modu funkcionisanja aplikacije, aplikacija se pri samom pokretanju i nakon uspješno obavljene registracija automatski stavlja u takav mod operacije i u njemu ostaje sve dok je upaljen ekran korisničkog uređaja (DEVICE) i Logit aplikacija (UI) se izvršava u prednjem planu \textit{(en. foreground)}, navedene zahtjeve diktira sama Android platforma.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{material/dia/02_bump}
+    \includegraphics[width=0.7\textwidth]{material/dia/02_bump}
     \caption{Dijagram interakcije - bilježenje prisustva studenata (Master BUMP)}
 \end{figure}
+\paragraph*{}
+Ukoliko su ispunjeni prethodno pobrojani zahtjevi, dovoljno je da student sa podešenom Logit aplikacijom na svom uređaju prinese slave (S) uređaj master (M) uređaju i da njegovo prisustvo bude zabilježeno i prikazano na ekranu M uređaja. Samu interakciju (BUMP) inicira studentski S uređaj. Prilikom ove BUMP događaja dolazi do razmjene kriptografski potpisanih podataka o vremenu i lokaciji (SPIM) sa S na M, gdje M vrši validaciju primljenih podataka poredeći studentsko vrijeme i lokaciju sa vremenom i lokacijom na M uređaju, gdje se prisustvo odbija ukoliko se ustanovi pokušaj lažiranja podataka.
 
 \subsection*{Prijava prisustva}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{material/dia/03_prijava}
+    \includegraphics[width=0.7\textwidth]{material/dia/03_prijava}
     \caption{Dijagram interakcije - prijava prisustva studenta (Slave BUMP)}
 \end{figure}
+\paragraph*{}
+Studentski S uređaj i M uređaj nastavnog osoblja podešavaju se na isti način opisan iznad, jedina praktična razlika javlja se prilikom korištenja, gdje je za S uređaj čije se prisustvo bilježi dovoljno upaliti ekran uređaja da bi se mogla ostvariti BUMP interakcija prislanjanjem S na M. Ovo je moguće jer se NFC HCE emulator Logit aplikacije izvršava u pozadini Android sistema.
 
 \subsection*{Pohranjivanje potpisa sesije na LAPI}
+\paragraph*{}
+Svako bilježenje prisustva unutar Logit Android UI odvija se unutar sesije (SESS) koja se automatski započinje prilikom prvog uspješno zabilježenog prisustva i traje sve dok korisnik ne izvrši pohranu navedene sesije na LAPI servis. Klikom na SYNC dugme prikupljeni podaci šalju se LAPI servisu, provjeravaju se jedinstveni potpisi studenata te potpis ukupne sesije od strane M uređaja, ukoliko se ne pronađu nepravilnosti navedeni podaci se pohranjuju u LAPI repozitorij potpisa, takvi podaci kriptografski su osigurani od naknadne izmjene.
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{material/dia/04_sync}
+    \includegraphics[width=0.6\textwidth]{material/dia/04_sync}
     \caption{Dijagram interakcije - pohranjivanje potpisa na LAPI (SYNC)}
 \end{figure}
+\paragraph*{}
+Potpisi pohranjeni u LAPI repozitoriju mogu dalje biti korišteni u integrisanim aplikacijskim rješenjima koja zahtijevaju ovakvu vrstu podataka pomoću ponuđenog LAPI REST interfejsa, te se mogu smatrati relevantnim i sigurnim dokazom prisustva.
 
 \section{Tehnički model rješenja}
 \paragraph*{}
@@ -59,3 +76,10 @@ Ukoliko master (M) želi da pohrani SPIM objekte iz jedne sesije (SESS) na Logit
 
 \paragraph*{}
 Uzmimajući u obzir bitnost rješenja i visoku vjerovatnoću svakodnevne primjene kod ciljane korisničke grupe, te izazove koje takav slučaj korištenja predstvalja omogućena je i direktna e-mail komunikacija za prijavu grešaka ili slanje prijedloga sa glavnog korisničkog interfejsa (ACTBUG). Kako se radi o slojevitom i kompleksnom softverskom rješenju za više detalja referirati se na izvorni kod priložen u dodatku.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{material/00-login}
+    \includegraphics[width=0.45\textwidth]{material/01-attendance}
+    \caption{Logit UI Android prikaz korisničkog interfejsa}
+\end{figure}
