@@ -23,11 +23,9 @@
 \usepackage{dingbat}
 \usepackage{pmboxdraw}
 \usepackage{enumitem}
-\usepackage{afterpage}
 \makeglossaries
            
 \input{layout}
-
 \linespread{1.5}
 
 \renewcommand{\abstractname}{Abstract}
@@ -66,6 +64,7 @@
 
 \begin{document}
 	\input{special/s1-naslovna}
+	\blankpage
 	\input{special/s2-apstrakt}
 	\tableofcontents
 	\listoffigures
@@ -78,7 +77,6 @@
 	\input{chapters/c4-tehnologija}
 	\input{chapters/c5-implementacija}
 	\input{chapters/c6-zakljucak}
-	
 	\begin{appendices}
 		\input{appendices/a1-uputstvo}
 %		\input{appendices/a2-model}

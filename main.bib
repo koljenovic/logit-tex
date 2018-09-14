@@ -9,7 +9,7 @@
 
 @misc{droidstats,
 title={Android Statistics Dashboard},
-howpublished={- https://developer.android.com/about/dashboards/index.html},
+howpublished={- https://developer.android.com/about/dashboards/},
 note={Pristupano: 2017-09-01}
 },
 
@@ -30,7 +30,7 @@ year={2005}
 }
 
 @misc{nfcforecast,
-howpublished={- https://www.nfcworld.com/2014/02/12/327790/two-three-phones-come-nfc-2018/},
+howpublished={- https://nfcworld.com/2014/02/12/327790/two-three-phones-come-nfc-2018/},
 title={NFC World - Adoption Statistics},
 year={2014},
 note={Pristupano: 2017-09-11}
@@ -70,12 +70,14 @@ year = {2003}
   publisher={Simon and Schuster}
 }
 
-@article{iso2013iso,
-  title={ISO/IEC 27001: 2013},
+@techreport{iso2013iso,
+  type = {Standard},
+  title={27001: 2013},
   author={ISO/IEC},
   journal={Information Technology-Security Techniques-Information Security Management Systems-Requirements},
   year={2013},
-  publisher={International Organization for Standardization}
+  publisher={International Organization for Standardization},
+  institution = {International Organization for Standardization}
 }
 
 @article{knuth1992literate,
@@ -84,4 +86,138 @@ year = {2003}
   journal={Center for the Study of Language and Information, ISBN},
   pages={978--0937073803},
   year={1992}
+}
+
+@techreport{NTAG216,
+abstract = {NTAG213, NTAG215 and NTAG216 have been developed by NXP Semiconductors as standard NFC tag ICs to be used in mass market applications such as retail, gaming and consumer electronics, in combination with NFC devices or NFC compliant Proximity Coupling Devices. NTAG213, NTAG215 and NTAG216 (from now on, generally called NTAG21x) are designed to fully comply to NFC Forum Type 2 Tag (Ref. 2) and ISO/IEC14443 Type A (Ref. 1) specifications. Target applications include Out-of-Home and print media smart advertisement, SoLoMo applications, product authentication, NFC shelf labels, mobile companion tags. Target use cases include Out-of-Home smart advertisement, product authentication, mobile companion tags, Bluetooth or Wi-Fi pairing, electronic shelf labels and business cards. NTAG21x memory can also be segmented to implement multiple applications at the same time. Thanks to the high input capacitance, NTAG21x tag ICs are particularly tailored for applications requiring small footprints, without compromise on performance. Small NFC tags can be more easily embedded into e.g. product labels or electronic devices. The mechanical and electrical specifications of NTAG21x are tailored to meet the requirements of inlay and tag manufacturers.},
+author = {{NXP Semiconductors}},
+mendeley-groups = {ETF/Logit/Standardi},
+number = {October},
+pages = {1--30},
+title = {{NTAG213/215/216 NFC Forum Type 2 Tag compliant IC with 144/504/888 bytes user memory}},
+url = {http://www.jp.nxp.com/documents/short{\_}data{\_}sheet/NTAG203{\_}SDS.pdf},
+year = {2011},
+institution={NXP Semiconductors}
+}
+
+@techreport{NFCTag2,
+type = {Standard},
+author = {{NFC Forum}},
+institution = {NFC Forum},
+isbn = {7818768955},
+mendeley-groups = {ETF/Logit/Standardi},
+pages = {40},
+title = {{Type 2 Tag Operation Specification}},
+url = {http://apps4android.org/nfc-specifications/NFCForum-TS-Type-4-Tag{\_}2.0.pdf},
+year = {2011}
+}
+
+@techreport{NFCProtocol,
+type = {Standard},
+author = {{NFC Forum}},
+institution = {NFC Forum},
+mendeley-groups = {ETF/Logit/Standardi},
+title = {{NFC Digital Protocol Technical Specification}},
+url = {http://www.nfc-forum.org/specs/},
+year = {2010}
+}
+
+@techreport{ISO14443,
+type = {Standard},
+key = {ISO 14443:1-4},
+year = {2018},
+title = {{ISO/IEC 14443-1:2018(en) 1-4 - Cards and security devices for personal identification}},
+volume = {4},
+address = {Geneva, CH},
+institution = {International Organization for Standardization},
+author={{ISO/IEC}}
+}
+
+@techreport{NDEF,
+type = {Standard},
+author = {{NFC Forum}},
+institution = {NFC Forum},
+mendeley-groups = {ETF/Logit/Standardi},
+pages = {69},
+title = {{NFC Data Exchange Format (NDEF)}},
+year = {2006}
+}
+
+@misc{elenkov_2012,
+title={Accessing the embedded secure element in Android 4.x},
+url={https://nelenkov.blogspot.com/2012/08/accessing-embedded-secure-element-in.html},
+journal={nelenkov.blogspot.com},
+author={Elenkov, Nikolay},
+year={2012},
+howpublished={- https://nelenkov.blogspot.com/2012/08/accessing-embedded-secure-element-in.html},
+note={Pristupano: 2018-09-14}
+}
+
+@misc{androidhce_2018,
+url={https://developer.android.com/guide/topics/connectivity/nfc/hce},
+journal={Android Developers},
+author={{Google}},
+year={2018},
+howpublished={- https://developer.android.com/guide/topics/connectivity/nfc/hce},
+note={Pristupano: 2018-09-14}
+}
+
+@misc{randomoracle_2014,
+url={https://randomoracle.wordpress.com/2014/08/12/fakeid-android-nfc-stack-and-google-wallet-part-i/},
+author={{C. Paya}},
+year={2014},
+howpublished={- https://randomoracle.wordpress.com/2014/08/12/fakeid-android-nfc-stack-and-google-wallet-part-i/},
+note={Pristupano: 2018-09-14}
+}
+
+@book{Elenkov2015,
+abstract = {There are nearly a billion Android devices in use today, and every one is a potential security breach. Love it or hate it, the security of Android-based devices is of major concern to users and developers alike. In "Android Security Internals," author Nikolay Elenkov delves into Android components and subsystems to give you a very deep and complete understanding of the security internals of Android devices. Elenkov's coverage of security topics ranges from package and user management to the details of cryptographic providers and credential storage. "Android Security Internals" is destined to be one book that that all security-minded Android developers will have to have on their bookshelves.},
+author = {Elenkov, Nikolay},
+mendeley-groups = {ETF/Logit,ETF/Logit/Books},
+title = {{Android Security Internals}},
+year = {2015},
+publisher={no starch press}
+}
+
+@book{Igoe2014,
+author = {Igoe, Tom and Coleman, Don and Jepson, Brian},
+doi = {10.1017/CBO9781107415324.004},
+eprint = {arXiv:1011.1669v3},
+isbn = {9781449372064},
+issn = {1098-6596},
+mendeley-groups = {ETF/Logit,ETF/Logit/Books},
+pages = {1--245},
+pmid = {25246403},
+title = {{Beginning NFC}},
+year = {2014},
+publisher={O'Reilly}
+}
+
+@misc{geoa,
+url={https://developer.android.com/guide/topics/location/strategies},
+journal={Android Developers},
+author={{Google}},
+year={2018},
+howpublished={- https://developer.android.com/guide/topics/location/strategies},
+note={Pristupano: 2018-09-14}
+}
+
+@article{rivest1978method,
+  title={A method for obtaining digital signatures and public-key cryptosystems},
+  author={Rivest, Ronald L and Shamir, Adi and Adleman, Leonard},
+  journal={Communications of the ACM},
+  volume={21},
+  number={2},
+  pages={120--126},
+  year={1978},
+  publisher={ACM}
+}
+
+@misc{nominatim,
+url={https://wiki.openstreetmap.org/wiki/Nominatim},
+journal={Nominatim},
+author={{OpenStreetMaps}},
+year={2018},
+howpublished={- https://wiki.openstreetmap.org/wiki/Nominatim},
+note={Pristupano: 2018-09-14}
 }
