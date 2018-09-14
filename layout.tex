@@ -1,3 +1,22 @@
+\usemintedstyle{emacs}
+\setminted{mathescape,
+           linenos,
+           frame=lines,
+           fontsize=\small,
+           baselinestretch=1,
+           framesep=2mm,
+           breaklines,
+           breakautoindent=false,
+           breaksymbolleft=\raisebox{0.8ex}{
+               \small\reflectbox{\carriagereturn}},
+           breaksymbolindentleft=0pt,
+           breaksymbolsepleft=0pt,
+           breaksymbolright=\small\carriagereturn,
+           breaksymbolindentright=0pt,
+           breaksymbolsepright=0pt}
+           
+\setminted[text]{frame=none}
+           
 \titleformat{\chapter}
 {\normalfont\huge\sffamily}{\thechapter}{1em}{\textbf}
 

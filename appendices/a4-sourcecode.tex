@@ -1,0 +1,78 @@
+\chapter{Izvorni kod}
+\section{LAPI izvorni kod}
+{\small Repo: \url{https://github.com/koljenovic/logit-node/}}
+\begin{minted}{text}
+.
+├── Logit
+│   ├── Logit
+│   │   ├── __init__.py
+│   │   ├── logit.db
+│   │   └── static
+│   └── logit.wsgi
+├── README.md
+└── README.md~
+\end{minted}
+\subsection{\small \url{__init__.py}}
+\inputminted{python}{../logit-node/Logit/Logit/__init__.py}
+
+\section{Android izvorni kod}
+{\small Repo: \url{https://github.com/koljenovic/logit/tree/master/android/app/src/main}}
+\begin{minted}{text}
+.
+├── AndroidManifest.xml
+├── ic_launcher-web.png
+├── java
+│   └── ba
+│       └── unsa
+│           └── etf
+│               └── logit
+│                   ├── api
+│                   │   └── LogitService.java
+│                   ├── AttendanceActivity.java
+│                   ├── AttendanceAdapter.java
+│                   ├── LogitApduService.java
+│                   ├── LogitApplication.java
+│                   ├── MainActivity.java
+│                   └── model
+│                       ├── Attendance.java
+│                       ├── Place.java
+│                       ├── Session.java
+│                       └── User.java
+└── res
+    ├── ---
+    │ 
+\end{minted}
+
+\pagebreak[4]
+\subsection{\small \url{AndroidManifest.xml}}
+\inputminted{xml}{../logit/android/app/src/main/AndroidManifest.xml}
+
+\subsection{\small \url{model/Attendance.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/model/Attendance.java}
+
+\subsection{\small \url{model/Place.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/model/Place.java}
+
+\subsection{\small \url{model/Session.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/model/Session.java}
+
+\subsection{\small \url{model/User.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/model/User.java}
+
+\subsection{\small \url{LogitService.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/api/LogitService.java}
+
+\subsection{\small \url{AttendanceActivity.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/AttendanceActivity.java}
+
+\subsection{\small \url{AttendanceAdapter.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/AttendanceAdapter.java}
+
+\subsection{\small \url{LogitApduService.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/LogitApduService.java}
+
+\subsection{\small \url{LogitApplication.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/LogitApplication.java}
+
+\subsection{\small \url{MainActivity.java}}
+\inputminted{java}{../logit/android/app/src/main/java/ba/unsa/etf/logit/MainActivity.java}

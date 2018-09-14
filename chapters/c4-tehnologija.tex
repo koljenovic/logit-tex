@@ -1,50 +1,60 @@
 \chapter{Pregled korištenih tehnologija}
-Android API https://developer.android.com/about/dashboards/
+%Android API https://developer.android.com/about/dashboards/
 \section{NFC - Near-field communication}
-android.nfc.cardemulation - added in API level 19
+%android.nfc.cardemulation - added in API level 19
 \section{NDEF - NFC Data Exchange Format}
+
+\begin{minted}{csharp}
+string title = "This is a Unicode in the sky"
+/*
+Defined as $\pi=\lim_{n\to\infty}\frac{P_n}{d}$ where $P$ is the perimeter
+of an $n$-sided regular polygon circumscribing a
+circle of diameter $d$.
+*/
+const double pi = 3.1415926535
+\end{minted}
 \section{HCE - Host card emulation}
-https://developer.android.com/guide/topics/connectivity/nfc/hce
-https://nelenkov.blogspot.com/2012/08/accessing-embedded-secure-element-in.html
-https://nelenkov.blogspot.com/2012/08/android-secure-element-execution.html
-https://nelenkov.blogspot.com/2012/08/exploring-google-wallet-using-secure.html
-UICCs are actually smart cards that can host applications, and as such are one form of a SE. However, since the UICC is only connected to the basedband processor, which is separate from the application processor that runs the main device OS, they cannot be accessed directly from Android. All communication needs to go through the Radio Interface Layer (RIL) which is essentially a proprietary IPC interface to the baseband. 
-there is currently no standard way to communicate with the UICC SE through the RIL
-
-The Single Wire Protocol (SWP) is a specification for a single-wire connection between the SIM card and a near field communication (NFC) chip in a cell phone. It is currently under final review by the European Telecommunications Standards Institute (ETSI).[1][2]
- ETSI TS 102 613 V.11.0.0 - UICC-CLF Interface; Part 1: Physical and data link layer characteristics (Release 11)
-  ETSI TS 102 622 V.12.1.0 - UICC-CLF Interface; Host Controller Interface (HCI) (Release 12)
-  https://en.wikipedia.org/wiki/Single_Wire_Protocol
-This is the case in the Nexus S, as well as the Galaxy Nexus, and while this functionality is supported by the NFC controller drivers, it is disabled by default.
-
-NFC and the SE are tightly integrated in Android, and not only because they share the same silicon, so let's say a few words about NFC. NFC has three standard modes of operation: 
-reader/writer (R/W) mode, allowing for accessing external NFC tags 
-peer-to-peer (P2P) mode, allowing for data exchange between two NFC devices (Android Beam)
-card emulation (CE) mode, which allows the device to emulate a traditional contactless smart card 
-
-https://randomoracle.wordpress.com/2014/08/12/fakeid-android-nfc-stack-and-google-wallet-part-i/
-
-https://randomoracle.wordpress.com/2013/12/02/nfc-card-emulation-and-android-4-4-part-i/
-
-HCE je inicijalno bio direktno nakacen na eSE, kasnije je i i sam Google presao na host emulaciju, razlog za ugradnju SE cipa je bio jer telekom operateri nisu dopustili Googlu pristup njihovom SE, naknadno je google kupio taj njihov projekat ISIS, koji je izgleda na kraju i napusten.
-
-Turning the screen on enables card-emulation mode on Android devices by default. (Note it is not necessary to unlock the screen, similar to how payments can be executed by tapping the point-of-sale terminal.)
-When the phone is introduced to the NFC field of the smartcard reader in this state, Windows smart-card service registers it as a card-present event.
-Appearance of a new card triggers a discovery process, to determine what type of card the user has introduced. End goal is picking a suitable smart-card driver. Because applications using smart-card operate in terms of higher level of abstractions such as certificates and cryptographic keys, drivers are required to translate these into low-level commands that each type of card understands.
-During the discovery process, the PC will exchange traffic over NFC with the secure element, to query its features.
-Driver discovery fails. This is not surprising– the “card” in question is used for contactless payments. It does not implement any of the standard card edges built into Windows 7/8 (PIV and GIDS) and neither does the answer-to-reset (ATR) identifier returned by the secure element
-Because no driver is located, the higher level application– in this case Windows logon– also fails in its attempt to locate credentials on the card, displaying the error in the last screenshot.
-https://randomoracle.wordpress.com/2012/11/25/your-android-phone-is-also-a-smartcard/
-
-The first post in this series described the permissions model for accessing the Android secure element from its contact interface. (Not to be confused with access from contactless aka NFC interface, which is open to any external device in NFC range.) This model can be viewed as a generalization of standard Android signature-based permissions— in fact for Gingerbread it was a vanilla signature permission based on matching the certificate used for signing NFC service.
-
-Starting with ICS, there is an explicit whitelist of allowed signing certificates. Any user application signed with one of these keys can obtain access to the secure element, and more broadly to administrative actions involving the NFC controller such as toggling card emulation mode.
-https://randomoracle.wordpress.com/2013/01/19/using-the-secure-element-on-an-android-device-23/
+%https://developer.android.com/guide/topics/connectivity/nfc/hce
+%ttps://nelenkov.blogspot.com/2012/08/accessing-embedded-secure-element-in.html
+%https://nelenkov.blogspot.com/2012/08/android-secure-element-execution.html
+%https://nelenkov.blogspot.com/2012/08/exploring-google-wallet-using-secure.html
+%UICCs are actually smart cards that can host applications, and as such are one form of a SE. However, since the UICC is only connected to the basedband processor, which is separate from the application processor that runs the main device OS, they cannot be accessed directly from Android. All communication needs to go through the Radio Interface Layer (RIL) which is essentially a proprietary IPC interface to the baseband. 
+%there is currently no standard way to communicate with the UICC SE through the RIL
+%
+%The Single Wire Protocol (SWP) is a specification for a single-wire connection between the SIM card and a near field communication (NFC) chip in a cell phone. It is currently under final review by the European Telecommunications Standards Institute (ETSI).[1][2]
+% ETSI TS 102 613 V.11.0.0 - UICC-CLF Interface; Part 1: Physical and data link layer characteristics (Release 11)
+%  ETSI TS 102 622 V.12.1.0 - UICC-CLF Interface; Host Controller Interface (HCI) (Release 12)
+%  https://en.wikipedia.org/wiki/Single_Wire_Protocol
+%This is the case in the Nexus S, as well as the Galaxy Nexus, and while this functionality is supported by the NFC controller drivers, it is disabled by default.
+%
+%NFC and the SE are tightly integrated in Android, and not only because they share the same silicon, so let's say a few words about NFC. NFC has three standard modes of operation: 
+%reader/writer (R/W) mode, allowing for accessing external NFC tags 
+%peer-to-peer (P2P) mode, allowing for data exchange between two NFC devices (Android Beam)
+%card emulation (CE) mode, which allows the device to emulate a traditional contactless smart card 
+%
+%https://randomoracle.wordpress.com/2014/08/12/fakeid-android-nfc-stack-and-google-wallet-part-i/
+%
+%https://randomoracle.wordpress.com/2013/12/02/nfc-card-emulation-and-android-4-4-part-i/
+%
+%HCE je inicijalno bio direktno nakacen na eSE, kasnije je i i sam Google presao na host emulaciju, razlog za ugradnju SE cipa je bio jer telekom operateri nisu dopustili Googlu pristup njihovom SE, naknadno je google kupio taj njihov projekat ISIS, koji je izgleda na kraju i napusten.
+%
+%Turning the screen on enables card-emulation mode on Android devices by default. (Note it is not necessary to unlock the screen, similar to how payments can be executed by tapping the point-of-sale terminal.)
+%When the phone is introduced to the NFC field of the smartcard reader in this state, Windows smart-card service registers it as a card-present event.
+%Appearance of a new card triggers a discovery process, to determine what type of card the user has introduced. End goal is picking a suitable smart-card driver. Because applications using smart-card operate in terms of higher level of abstractions such as certificates and cryptographic keys, drivers are required to translate these into low-level commands that each type of card understands.
+%During the discovery process, the PC will exchange traffic over NFC with the secure element, to query its features.
+%Driver discovery fails. This is not surprising– the “card” in question is used for contactless payments. It does not implement any of the standard card edges built into Windows 7/8 (PIV and GIDS) and neither does the answer-to-reset (ATR) identifier returned by the secure element
+%Because no driver is located, the higher level application– in this case Windows logon– also fails in its attempt to locate credentials on the card, displaying the error in the last screenshot.
+%https://randomoracle.wordpress.com/2012/11/25/your-android-phone-is-also-a-smartcard/
+%
+%The first post in this series described the permissions model for accessing the Android secure element from its contact interface. (Not to be confused with access from contactless aka NFC interface, which is open to any external device in NFC range.) This model can be viewed as a generalization of standard Android signature-based permissions— in fact for Gingerbread it was a vanilla signature permission based on matching the certificate used for signing NFC service.
+%
+%Starting with ICS, there is an explicit whitelist of allowed signing certificates. Any user application signed with one of these keys can obtain access to the secure element, and more broadly to administrative actions involving the NFC controller such as toggling card emulation mode.
+%https://randomoracle.wordpress.com/2013/01/19/using-the-secure-element-on-an-android-device-23/
 \section{Kriptografske tehnologije}
-https://www.kaspersky.com/blog/secure-element/22408/
+%https://www.kaspersky.com/blog/secure-element/22408/
 \section{Android}
 \subsection{GPS Geolokacija}
-Treba provjeravati geo spoof
+%Treba provjeravati geo spoof
 \subsection{Retrofit HTTP Client}
 \subsection{GSON JSON Serializer}
 \section{Python}
