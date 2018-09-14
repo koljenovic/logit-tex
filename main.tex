@@ -23,6 +23,7 @@
 \usepackage{dingbat}
 \usepackage{pmboxdraw}
 \usepackage{enumitem}
+\usepackage{afterpage}
 \makeglossaries
            
 \input{layout}
@@ -43,6 +44,12 @@
 \renewcommand\appendixtocname{Dodatak}
 \renewcommand{\glossaryname}{Pojmovnik}
 \renewcommand{\acronymname}{Pojmovnik} 
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 
 \SetWatermarkText{}
 \SetWatermarkScale{0.8}
