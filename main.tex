@@ -1,47 +1,90 @@
-\documentclass[a4paper,11pt,titlepage]{report}
-\pagestyle{plain}
+\documentclass[12pt,oneside,a4paper]{book}
 
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper]{geometry}
+%\usepackage{lmodern}
+%\usepackage{naslovna}
+
+\usepackage{etex}
+\usepackage{xcolor}
+\usepackage[pdftex]{graphicx}
+
 \usepackage{draftwatermark}
-\usepackage{listings}
-\usepackage[toc,page]{appendix}
-\usepackage[croatian]{babel}
-\usepackage[sc]{mathpazo}
-\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
-\usepackage{graphicx}
-\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
-\usepackage{titlesec}
-\usepackage{naslovna}
-\usepackage[nomain,acronym,xindy,toc,nonumberlist,automake]{glossaries}
-\usepackage{float}
-\usepackage[nottoc]{tocbibind}
 \usepackage{minted}
+\usepackage[sc]{mathpazo}
+\usepackage{mathrsfs}
 \usepackage{CJKutf8}
+\usepackage[nomain,acronym,xindy,toc,nonumberlist,automake]{glossaries}
 \usepackage{dingbat}
 \usepackage{pmboxdraw}
-\usepackage{enumitem}
-\makeglossaries
-           
-\input{layout}
-\linespread{1.5}
+\usepackage{float}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titlesec}
+\usepackage{lastpage}
 
-\renewcommand{\abstractname}{Abstract}
-\renewcommand{\contentsname}{Sadržaj}
-\renewcommand{\figurename}{Prikaz}
-\renewcommand{\tablename}{Tabela}
-\renewcommand{\chaptername}{}
-\renewcommand{\bibname}{Literatura}
-\renewcommand\lstlistlistingname{Indeks listinga}
-\renewcommand\listfigurename{Indeks prikaza}
-\renewcommand\listtablename{Indeks tabela}
-\renewcommand\appendixname{Dodatak}
-\renewcommand\appendixpagename{Dodaci}
-\renewcommand\appendixtocname{Dodatak}
-\renewcommand{\glossaryname}{Pojmovnik}
-\renewcommand{\acronymname}{Pojmovnik} 
+\usepackage[unicode,linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+
+\usepackage{rotating}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{cmap}
+\usepackage[croatian]{babel}
+\usepackage{mathptmx}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{setspace} 
+\usepackage{hhline}
+\usepackage{enumerate}
+\usepackage{delarray}
+\usepackage{array}  
+\usepackage{tabularx} 
+\usepackage{multirow}  
+\usepackage[bf,font=small]{caption}
+\usepackage[labelfont=small,font=small]{subcaption}
+\usepackage{wasysym}
+\usepackage{subeqnarray}
+\usepackage{pdflscape} % setting page into landscape view
+\usepackage{enumitem} % for itemize lists
+\usepackage[toc,page]{appendix}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{makeidx}
+\usepackage{nomencl}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,breaklines=true}
+\usepackage{courier}
+% Podesavanje izgleda zaglavlja i podnozja strana
+\usepackage{fancyhdr} 
+\usepackage[square, numbers, sort]{natbib} 
+
+\fancypagestyle{plain}{%
+  \fancyhf{}% Clear header/footer
+  \fancyfoot[OR]{{\thepage}}%
+  \fancyfoot[EL]{{\thepage}}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+           
+\makeglossaries
+%           
+\input{layout}
+%\linespread{1.5}
+%
+%\renewcommand{\abstractname}{Abstract}
+%\renewcommand{\contentsname}{Sadržaj}
+%\renewcommand{\figurename}{Prikaz}
+%\renewcommand{\tablename}{Tabela}
+%\renewcommand{\chaptername}{}
+%\renewcommand{\bibname}{Literatura}
+%\renewcommand\lstlistlistingname{Indeks listinga}
+%\renewcommand\listfigurename{Indeks prikaza}
+%\renewcommand\listtablename{Indeks tabela}
+%\renewcommand\appendixname{Dodatak}
+%\renewcommand\appendixpagename{Dodaci}
+%\renewcommand\appendixtocname{Dodatak}
+\renewcommand{\glossaryname}{Indeks pojmova}
+\renewcommand{\acronymname}{Indeks pojmova} 
 
 \newcommand\blankpage{%
     \null
@@ -49,42 +92,102 @@
     \addtocounter{page}{-1}%
     \newpage}
 
-\SetWatermarkText{}
-\SetWatermarkScale{0.8}
+%\SetWatermarkText{}
+%\SetWatermarkScale{0.8}
 
-\title{Aplikacija za evidentiranje prisustva}
-\author{Malik Koljenović, BSc IT}
-\thesistype{MSc završni rad}
-\mentor{prof. dr. Saša Mrdović}
-\department{Odsjek za računarstvo i informatiku}
-\faculty{Elektrotehnički fakultet}
-\university{Univerzitet u Sarajevu}
-\date{Sarajevo, septembar 2018}
+%\input{special/s3-pojmovnik}
+
+%\begin{document}
+%	\input{special/s1-naslovna}
+%  	\input{special/s0-izjava}
+%	\blankpage
+%	\input{special/s2-apstrakt}
+%   	\tableofcontents
+%	\listoffigures
+%	\listoftables
+%   \glsaddall
+%	\printglossaries
+%	\input{chapters/c1-uvod}
+%	\input{chapters/c2-problem}
+%	\input{chapters/c3a-osnove}
+%	\input{chapters/c3-rjesenje}
+%	\input{chapters/c4-tehnologija}
+%	\input{chapters/c5-implementacija}
+%	\input{chapters/c6-zakljucak}
+%	\begin{appendices}
+%		\input{appendices/a1-uputstvo}
+%		\input{appendices/a2-model}
+%		\input{appendices/a3-api}
+%		\input{appendices/a4-sourcecode}
+%	\end{appendices}
+%	
+%	\bibliographystyle{ieeetr}
+%	\bibliography{main}
+%\end{document}
+
+% iskljucivanje broja strane iz Sadrzaja, Popisa slika i Popisa tabela
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}}
+\AtBeginDocument{\addtocontents{lof}{\protect\thispagestyle{empty}}}
+\AtBeginDocument{\addtocontents{lot}{\protect\thispagestyle{empty}}}
+
+\addto\captionscroatian{
+  \renewcommand{\bibname}{Literatura}
+  \renewcommand{\tablename}{Tabela}
+  \renewcommand{\nomname}{Popis oznaka}
+  \renewcommand{\indexname}{Indeks pojmova}
+  \renewcommand{\lstlistingname}{Program}
+  \renewcommand{\glossaryname}{Indeks pojmova}
+  \renewcommand{\acronymname}{Indeks pojmova} 
+}
+
+%\addto\captionscroatian{\renewcommand{\listtablename}{Popis tabela}}
+\addto\captionscroatian{\renewcommand\appendixname{Prilog}}
+\addto\captionscroatian{\renewcommand\appendixpagename{Prilozi}}
+\renewcommand\appendixtocname{Prilozi}
+
+\makeindex
+\makenomenclature
 \input{special/s3-pojmovnik}
 
 \begin{document}
+    \frontmatter
 	\input{special/s1-naslovna}
+    \input{special/s2-apstrakt}
+    \input{special/s4-postavka}
+    \input{special/s5-potpisi}
+%    \input{special/s6-predgovor}
   	\input{special/s0-izjava}
-%	\blankpage
-	\input{special/s2-apstrakt}
-	\tableofcontents
+  	
+   	\tableofcontents
 	\listoffigures
-%	\listoftables
+	%\listoftables
     \glsaddall
 	\printglossaries
+	
+    \cleardoublepage % start new page
+    \pagestyle{fancyplain} % puts headers/footers back on
+    \fancyhf{}
+    \lhead{\nouppercase{\fancyplain{}{\leftmark}}}
+    \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+    \renewcommand{\footrulewidth}{0.4pt} %draw foot line
+    \lfoot{\slshape Koljenović, M., "Aplikacija za evidentiranje prisustva"}
+    \rfoot{\thepage}
+    \cfoot{}
+
+    \mainmatter
 	\input{chapters/c1-uvod}
 	\input{chapters/c2-problem}
+	\input{chapters/c3a-osnove}
 	\input{chapters/c3-rjesenje}
 	\input{chapters/c4-tehnologija}
 	\input{chapters/c5-implementacija}
+	\input{appendices/a1-uputstvo}
+	\input{chapters/c5a-sigurnost}
 	\input{chapters/c6-zakljucak}
 	\begin{appendices}
-		\input{appendices/a1-uputstvo}
-%		\input{appendices/a2-model}
-%		\input{appendices/a3-api}
 		\input{appendices/a4-sourcecode}
 	\end{appendices}
-	
-	\bibliographystyle{ieeetr}
+	\backmatter
+	\bibliographystyle{IEEEtranETF}
 	\bibliography{main}
 \end{document}

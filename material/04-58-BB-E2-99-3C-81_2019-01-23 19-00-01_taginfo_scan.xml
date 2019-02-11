@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scan>
+	<version>4.24.4</version>
+	<date>2019-01-23 19:00:01</date>
+	<title>NXP Semiconductors NTAG216 tag as Type 2 Tag</title>
+	<uid nxp="true">04:58:BB:E2:99:3C:81</uid>
+	<hasndef>true</hasndef>
+	<ndef>C218000002DF6170706C69636174696F6E2F6F637465742D73747265616D7B226C6174223A2234332E39383935323132222C20226C6F6E223A2231382E313830373337222C20227473223A2231353131333038383234222C2022736967223A223132393437633431343531646638616334353836616539623231316465636237303038376437646230623165323532303261326233656330376632363738303464353236616336343163323065323832666538626431326637626463396263623261356166636336356566396235353065383062393031633831326339613966643837626232393832386464636431626664316231643137366464393633653333366634623564356361663961646535613362396236303336376363656237646538303764633364666238306432623337333939333732356234346534336430313136643732313432636232626638313634633462636334613639306439343932353133613732333238313831646132633461306630356535373739323332326237623134303461633663323163386237313539366130636632363265303434303031313531643930643764396539383664353066326563393330626361613531356330346236343563656132373836363935366632346632383561626664373665306562383133306636373939376565376134646564353039333766316162653333656265656238326461383662346339626665656266383964333032366134323364356330396464366563363562643637356532656536656138373364636338343962356636383763393161383235656330313066383666323338633562222C2022756964223A2232343438323565353462313835306232643738316266643763656333376133303264376366346339656361633930653866356536346661303963363633323061222C20226E616D65223A2234313661363436393665222C20227375726E616D65223A22346437353661363537613639366536663736363963343837222C202275736572223A22616D756A657A696E6F7633227D</ndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>NTAG216</content>
+</block>
+		</subsection>
+		<subsection title="NFC Forum NDEF-compliant tag">
+			<block type="text">
+	<content>Type 2 Tag</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="NFC data set information">
+			<block type="text">
+	<content>NDEF message containing 1 record
+Current message size: 765 bytes
+Maximum message size: 868 bytes
+NFC data set access: Read &amp; Write
+Can be made Read-Only</content>
+</block>
+		</subsection>
+		<subsection title="Record #1: MIME type (RFC 2046) record">
+			<block type="text">
+	<content><size size="12">Type Name Format: MIME type (RFC 2046)<hexoutput> (2)</hexoutput>
+</size></content>
+</block><block type="text">
+	<content><mono>type: "<mime record="0">application/octet-stream</mime>"
+</mono></content>
+</block>
+<block type="text">
+	<content>Payload length: 735 bytes</content>
+</block>
+<block type="text">
+	<content>Payload data:
+</content>
+</block>
+<block type="File">
+	<address addrwidth="3">0</address>
+	<data>7B 22 6C 61 74 22 3A 22 34 33 2E 39 38 39 35 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">16</address>
+	<data>31 32 22 2C 20 22 6C 6F 6E 22 3A 22 31 38 2E 31</data>
+</block>
+<block type="File">
+	<address addrwidth="3">32</address>
+	<data>38 30 37 33 37 22 2C 20 22 74 73 22 3A 22 31 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">48</address>
+	<data>31 31 33 30 38 38 32 34 22 2C 20 22 73 69 67 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">64</address>
+	<data>3A 22 31 32 39 34 37 63 34 31 34 35 31 64 66 38</data>
+</block>
+<block type="File">
+	<address addrwidth="3">80</address>
+	<data>61 63 34 35 38 36 61 65 39 62 32 31 31 64 65 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">96</address>
+	<data>62 37 30 30 38 37 64 37 64 62 30 62 31 65 32 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">112</address>
+	<data>32 30 32 61 32 62 33 65 63 30 37 66 32 36 37 38</data>
+</block>
+<block type="File">
+	<address addrwidth="3">128</address>
+	<data>30 34 64 35 32 36 61 63 36 34 31 63 32 30 65 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">144</address>
+	<data>38 32 66 65 38 62 64 31 32 66 37 62 64 63 39 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">160</address>
+	<data>63 62 32 61 35 61 66 63 63 36 35 65 66 39 62 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">176</address>
+	<data>35 30 65 38 30 62 39 30 31 63 38 31 32 63 39 61</data>
+</block>
+<block type="File">
+	<address addrwidth="3">192</address>
+	<data>39 66 64 38 37 62 62 32 39 38 32 38 64 64 63 64</data>
+</block>
+<block type="File">
+	<address addrwidth="3">208</address>
+	<data>31 62 66 64 31 62 31 64 31 37 36 64 64 39 36 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">224</address>
+	<data>65 33 33 36 66 34 62 35 64 35 63 61 66 39 61 64</data>
+</block>
+<block type="File">
+	<address addrwidth="3">240</address>
+	<data>65 35 61 33 62 39 62 36 30 33 36 37 63 63 65 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">256</address>
+	<data>37 64 65 38 30 37 64 63 33 64 66 62 38 30 64 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">272</address>
+	<data>62 33 37 33 39 39 33 37 32 35 62 34 34 65 34 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">288</address>
+	<data>64 30 31 31 36 64 37 32 31 34 32 63 62 32 62 66</data>
+</block>
+<block type="File">
+	<address addrwidth="3">304</address>
+	<data>38 31 36 34 63 34 62 63 63 34 61 36 39 30 64 39</data>
+</block>
+<block type="File">
+	<address addrwidth="3">320</address>
+	<data>34 39 32 35 31 33 61 37 32 33 32 38 31 38 31 64</data>
+</block>
+<block type="File">
+	<address addrwidth="3">336</address>
+	<data>61 32 63 34 61 30 66 30 35 65 35 37 37 39 32 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">352</address>
+	<data>32 32 62 37 62 31 34 30 34 61 63 36 63 32 31 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">368</address>
+	<data>38 62 37 31 35 39 36 61 30 63 66 32 36 32 65 30</data>
+</block>
+<block type="File">
+	<address addrwidth="3">384</address>
+	<data>34 34 30 30 31 31 35 31 64 39 30 64 37 64 39 65</data>
+</block>
+<block type="File">
+	<address addrwidth="3">400</address>
+	<data>39 38 36 64 35 30 66 32 65 63 39 33 30 62 63 61</data>
+</block>
+<block type="File">
+	<address addrwidth="3">416</address>
+	<data>61 35 31 35 63 30 34 62 36 34 35 63 65 61 32 37</data>
+</block>
+<block type="File">
+	<address addrwidth="3">432</address>
+	<data>38 36 36 39 35 36 66 32 34 66 32 38 35 61 62 66</data>
+</block>
+<block type="File">
+	<address addrwidth="3">448</address>
+	<data>64 37 36 65 30 65 62 38 31 33 30 66 36 37 39 39</data>
+</block>
+<block type="File">
+	<address addrwidth="3">464</address>
+	<data>37 65 65 37 61 34 64 65 64 35 30 39 33 37 66 31</data>
+</block>
+<block type="File">
+	<address addrwidth="3">480</address>
+	<data>61 62 65 33 33 65 62 65 65 62 38 32 64 61 38 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">496</address>
+	<data>62 34 63 39 62 66 65 65 62 66 38 39 64 33 30 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">512</address>
+	<data>36 61 34 32 33 64 35 63 30 39 64 64 36 65 63 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">528</address>
+	<data>35 62 64 36 37 35 65 32 65 65 36 65 61 38 37 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">544</address>
+	<data>64 63 63 38 34 39 62 35 66 36 38 37 63 39 31 61</data>
+</block>
+<block type="File">
+	<address addrwidth="3">560</address>
+	<data>38 32 35 65 63 30 31 30 66 38 36 66 32 33 38 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">576</address>
+	<data>35 62 22 2C 20 22 75 69 64 22 3A 22 32 34 34 38</data>
+</block>
+<block type="File">
+	<address addrwidth="3">592</address>
+	<data>32 35 65 35 34 62 31 38 35 30 62 32 64 37 38 31</data>
+</block>
+<block type="File">
+	<address addrwidth="3">608</address>
+	<data>62 66 64 37 63 65 63 33 37 61 33 30 32 64 37 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">624</address>
+	<data>66 34 63 39 65 63 61 63 39 30 65 38 66 35 65 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">640</address>
+	<data>34 66 61 30 39 63 36 36 33 32 30 61 22 2C 20 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">656</address>
+	<data>6E 61 6D 65 22 3A 22 34 31 36 61 36 34 36 39 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">672</address>
+	<data>65 22 2C 20 22 73 75 72 6E 61 6D 65 22 3A 22 34</data>
+</block>
+<block type="File">
+	<address addrwidth="3">688</address>
+	<data>64 37 35 36 61 36 35 37 61 36 39 36 65 36 66 37</data>
+</block>
+<block type="File">
+	<address addrwidth="3">704</address>
+	<data>36 36 39 63 34 38 37 22 2C 20 22 75 73 65 72 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">720</address>
+	<data>3A 22 61 6D 75 6A 65 7A 69 6E 6F 76 33 22 7D</data>
+</block>
+		</subsection>
+		<subsection title="NDEF message">
+			<block type="File">
+	<address addrwidth="3">0</address>
+	<data>C2 18 00 00 02 DF 61 70 70 6C 69 63 61 74 69 6F</data>
+</block>
+<block type="File">
+	<address addrwidth="3">16</address>
+	<data>6E 2F 6F 63 74 65 74 2D 73 74 72 65 61 6D 7B 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">32</address>
+	<data>6C 61 74 22 3A 22 34 33 2E 39 38 39 35 32 31 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">48</address>
+	<data>22 2C 20 22 6C 6F 6E 22 3A 22 31 38 2E 31 38 30</data>
+</block>
+<block type="File">
+	<address addrwidth="3">64</address>
+	<data>37 33 37 22 2C 20 22 74 73 22 3A 22 31 35 31 31</data>
+</block>
+<block type="File">
+	<address addrwidth="3">80</address>
+	<data>33 30 38 38 32 34 22 2C 20 22 73 69 67 22 3A 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">96</address>
+	<data>31 32 39 34 37 63 34 31 34 35 31 64 66 38 61 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">112</address>
+	<data>34 35 38 36 61 65 39 62 32 31 31 64 65 63 62 37</data>
+</block>
+<block type="File">
+	<address addrwidth="3">128</address>
+	<data>30 30 38 37 64 37 64 62 30 62 31 65 32 35 32 30</data>
+</block>
+<block type="File">
+	<address addrwidth="3">144</address>
+	<data>32 61 32 62 33 65 63 30 37 66 32 36 37 38 30 34</data>
+</block>
+<block type="File">
+	<address addrwidth="3">160</address>
+	<data>64 35 32 36 61 63 36 34 31 63 32 30 65 32 38 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">176</address>
+	<data>66 65 38 62 64 31 32 66 37 62 64 63 39 62 63 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">192</address>
+	<data>32 61 35 61 66 63 63 36 35 65 66 39 62 35 35 30</data>
+</block>
+<block type="File">
+	<address addrwidth="3">208</address>
+	<data>65 38 30 62 39 30 31 63 38 31 32 63 39 61 39 66</data>
+</block>
+<block type="File">
+	<address addrwidth="3">224</address>
+	<data>64 38 37 62 62 32 39 38 32 38 64 64 63 64 31 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">240</address>
+	<data>66 64 31 62 31 64 31 37 36 64 64 39 36 33 65 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">256</address>
+	<data>33 36 66 34 62 35 64 35 63 61 66 39 61 64 65 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">272</address>
+	<data>61 33 62 39 62 36 30 33 36 37 63 63 65 62 37 64</data>
+</block>
+<block type="File">
+	<address addrwidth="3">288</address>
+	<data>65 38 30 37 64 63 33 64 66 62 38 30 64 32 62 33</data>
+</block>
+<block type="File">
+	<address addrwidth="3">304</address>
+	<data>37 33 39 39 33 37 32 35 62 34 34 65 34 33 64 30</data>
+</block>
+<block type="File">
+	<address addrwidth="3">320</address>
+	<data>31 31 36 64 37 32 31 34 32 63 62 32 62 66 38 31</data>
+</block>
+<block type="File">
+	<address addrwidth="3">336</address>
+	<data>36 34 63 34 62 63 63 34 61 36 39 30 64 39 34 39</data>
+</block>
+<block type="File">
+	<address addrwidth="3">352</address>
+	<data>32 35 31 33 61 37 32 33 32 38 31 38 31 64 61 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">368</address>
+	<data>63 34 61 30 66 30 35 65 35 37 37 39 32 33 32 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">384</address>
+	<data>62 37 62 31 34 30 34 61 63 36 63 32 31 63 38 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">400</address>
+	<data>37 31 35 39 36 61 30 63 66 32 36 32 65 30 34 34</data>
+</block>
+<block type="File">
+	<address addrwidth="3">416</address>
+	<data>30 30 31 31 35 31 64 39 30 64 37 64 39 65 39 38</data>
+</block>
+<block type="File">
+	<address addrwidth="3">432</address>
+	<data>36 64 35 30 66 32 65 63 39 33 30 62 63 61 61 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">448</address>
+	<data>31 35 63 30 34 62 36 34 35 63 65 61 32 37 38 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">464</address>
+	<data>36 39 35 36 66 32 34 66 32 38 35 61 62 66 64 37</data>
+</block>
+<block type="File">
+	<address addrwidth="3">480</address>
+	<data>36 65 30 65 62 38 31 33 30 66 36 37 39 39 37 65</data>
+</block>
+<block type="File">
+	<address addrwidth="3">496</address>
+	<data>65 37 61 34 64 65 64 35 30 39 33 37 66 31 61 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">512</address>
+	<data>65 33 33 65 62 65 65 62 38 32 64 61 38 36 62 34</data>
+</block>
+<block type="File">
+	<address addrwidth="3">528</address>
+	<data>63 39 62 66 65 65 62 66 38 39 64 33 30 32 36 61</data>
+</block>
+<block type="File">
+	<address addrwidth="3">544</address>
+	<data>34 32 33 64 35 63 30 39 64 64 36 65 63 36 35 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">560</address>
+	<data>64 36 37 35 65 32 65 65 36 65 61 38 37 33 64 63</data>
+</block>
+<block type="File">
+	<address addrwidth="3">576</address>
+	<data>63 38 34 39 62 35 66 36 38 37 63 39 31 61 38 32</data>
+</block>
+<block type="File">
+	<address addrwidth="3">592</address>
+	<data>35 65 63 30 31 30 66 38 36 66 32 33 38 63 35 62</data>
+</block>
+<block type="File">
+	<address addrwidth="3">608</address>
+	<data>22 2C 20 22 75 69 64 22 3A 22 32 34 34 38 32 35</data>
+</block>
+<block type="File">
+	<address addrwidth="3">624</address>
+	<data>65 35 34 62 31 38 35 30 62 32 64 37 38 31 62 66</data>
+</block>
+<block type="File">
+	<address addrwidth="3">640</address>
+	<data>64 37 63 65 63 33 37 61 33 30 32 64 37 63 66 34</data>
+</block>
+<block type="File">
+	<address addrwidth="3">656</address>
+	<data>63 39 65 63 61 63 39 30 65 38 66 35 65 36 34 66</data>
+</block>
+<block type="File">
+	<address addrwidth="3">672</address>
+	<data>61 30 39 63 36 36 33 32 30 61 22 2C 20 22 6E 61</data>
+</block>
+<block type="File">
+	<address addrwidth="3">688</address>
+	<data>6D 65 22 3A 22 34 31 36 61 36 34 36 39 36 65 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">704</address>
+	<data>2C 20 22 73 75 72 6E 61 6D 65 22 3A 22 34 64 37</data>
+</block>
+<block type="File">
+	<address addrwidth="3">720</address>
+	<data>35 36 61 36 35 37 61 36 39 36 65 36 66 37 36 36</data>
+</block>
+<block type="File">
+	<address addrwidth="3">736</address>
+	<data>39 63 34 38 37 22 2C 20 22 75 73 65 72 22 3A 22</data>
+</block>
+<block type="File">
+	<address addrwidth="3">752</address>
+	<data>61 6D 75 6A 65 7A 69 6E 6F 76 33 22 7D</data>
+</block>
+		</subsection>
+		<subsection title="NDEF Capability Container (CC)">
+			<block type="text">
+	<content>Mapping version: 1.0
+Maximum NDEF data size: 872 bytes<hexoutput> (0x6D)</hexoutput>
+NDEF access: Read &amp; Write<hexoutput> (0x00)</hexoutput></content>
+</block><block type="File">
+	<address>-1</address>
+	<data>E1 10 6D 00</data>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>888 bytes user memory
+‣ 222 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: NT2H1611G0DUx
+Capacitance: 50 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: NTAG<hexoutput> (0x04)</hexoutput>
+Subtype: 50 pF<hexoutput> (0x02)</hexoutput>
+Major version: 1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 888 bytes<hexoutput> (0x13)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>ASCII mirror disabled
+NFC counter: disabled
+No limit on wrong password attempts
+Strong load modulation enabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>
+Public key:
+‣ 0x04494E1A386D3D3CFE3DC10E5DE68A499B1C202DB5B132393E89ED19FE5BE8BC61
+</hexoutput><hexoutput>ECDSA signature:
+‣ r: 0xBC1FE200173032091463CFCA08D2F1DF
+‣ s: 0x2EE33575B117449009C36F31064EBD15</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.Ndef]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:58:BB:E2:99:3C:81
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 58 BB 6F</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">E2 99 3C 81</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">E1 10 6D 00</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">03 FF 02 FD</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">C2 18 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">02 DF 61 70</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">70 6C 69 63</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">61 74 69 6F</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">6E 2F 6F 63</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">74 65 74 2D</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">73 74 72 65</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">61 6D 7B 22</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6C 61 74 22</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">3A 22 34 33</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">2E 39 38 39</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access=". ">35 32 31 32</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access=". ">22 2C 20 22</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access=". ">6C 6F 6E 22</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access=". ">3A 22 31 38</data>
+</block>
+<block type="Ultralight">
+	<address>20</address>
+	<data access=". ">2E 31 38 30</data>
+</block>
+<block type="Ultralight">
+	<address>21</address>
+	<data access=". ">37 33 37 22</data>
+</block>
+<block type="Ultralight">
+	<address>22</address>
+	<data access=". ">2C 20 22 74</data>
+</block>
+<block type="Ultralight">
+	<address>23</address>
+	<data access=". ">73 22 3A 22</data>
+</block>
+<block type="Ultralight">
+	<address>24</address>
+	<data access=". ">31 35 31 31</data>
+</block>
+<block type="Ultralight">
+	<address>25</address>
+	<data access=". ">33 30 38 38</data>
+</block>
+<block type="Ultralight">
+	<address>26</address>
+	<data access=". ">32 34 22 2C</data>
+</block>
+<block type="Ultralight">
+	<address>27</address>
+	<data access=". ">20 22 73 69</data>
+</block>
+<block type="Ultralight">
+	<address>28</address>
+	<data access=". ">67 22 3A 22</data>
+</block>
+<block type="Ultralight">
+	<address>29</address>
+	<data access=". ">31 32 39 34</data>
+</block>
+<block type="Ultralight">
+	<address>30</address>
+	<data access=". ">37 63 34 31</data>
+</block>
+<block type="Ultralight">
+	<address>31</address>
+	<data access=". ">34 35 31 64</data>
+</block>
+<block type="Ultralight">
+	<address>32</address>
+	<data access=". ">66 38 61 63</data>
+</block>
+<block type="Ultralight">
+	<address>33</address>
+	<data access=". ">34 35 38 36</data>
+</block>
+<block type="Ultralight">
+	<address>34</address>
+	<data access=". ">61 65 39 62</data>
+</block>
+<block type="Ultralight">
+	<address>35</address>
+	<data access=". ">32 31 31 64</data>
+</block>
+<block type="Ultralight">
+	<address>36</address>
+	<data access=". ">65 63 62 37</data>
+</block>
+<block type="Ultralight">
+	<address>37</address>
+	<data access=". ">30 30 38 37</data>
+</block>
+<block type="Ultralight">
+	<address>38</address>
+	<data access=". ">64 37 64 62</data>
+</block>
+<block type="Ultralight">
+	<address>39</address>
+	<data access=". ">30 62 31 65</data>
+</block>
+<block type="Ultralight">
+	<address>40</address>
+	<data access=". ">32 35 32 30</data>
+</block>
+<block type="Ultralight">
+	<address>41</address>
+	<data access=". ">32 61 32 62</data>
+</block>
+<block type="Ultralight">
+	<address>42</address>
+	<data access=". ">33 65 63 30</data>
+</block>
+<block type="Ultralight">
+	<address>43</address>
+	<data access=". ">37 66 32 36</data>
+</block>
+<block type="Ultralight">
+	<address>44</address>
+	<data access=". ">37 38 30 34</data>
+</block>
+<block type="Ultralight">
+	<address>45</address>
+	<data access=". ">64 35 32 36</data>
+</block>
+<block type="Ultralight">
+	<address>46</address>
+	<data access=". ">61 63 36 34</data>
+</block>
+<block type="Ultralight">
+	<address>47</address>
+	<data access=". ">31 63 32 30</data>
+</block>
+<block type="Ultralight">
+	<address>48</address>
+	<data access=". ">65 32 38 32</data>
+</block>
+<block type="Ultralight">
+	<address>49</address>
+	<data access=". ">66 65 38 62</data>
+</block>
+<block type="Ultralight">
+	<address>50</address>
+	<data access=". ">64 31 32 66</data>
+</block>
+<block type="Ultralight">
+	<address>51</address>
+	<data access=". ">37 62 64 63</data>
+</block>
+<block type="Ultralight">
+	<address>52</address>
+	<data access=". ">39 62 63 62</data>
+</block>
+<block type="Ultralight">
+	<address>53</address>
+	<data access=". ">32 61 35 61</data>
+</block>
+<block type="Ultralight">
+	<address>54</address>
+	<data access=". ">66 63 63 36</data>
+</block>
+<block type="Ultralight">
+	<address>55</address>
+	<data access=". ">35 65 66 39</data>
+</block>
+<block type="Ultralight">
+	<address>56</address>
+	<data access=". ">62 35 35 30</data>
+</block>
+<block type="Ultralight">
+	<address>57</address>
+	<data access=". ">65 38 30 62</data>
+</block>
+<block type="Ultralight">
+	<address>58</address>
+	<data access=". ">39 30 31 63</data>
+</block>
+<block type="Ultralight">
+	<address>59</address>
+	<data access=". ">38 31 32 63</data>
+</block>
+<block type="Ultralight">
+	<address>60</address>
+	<data access=". ">39 61 39 66</data>
+</block>
+<block type="Ultralight">
+	<address>61</address>
+	<data access=". ">64 38 37 62</data>
+</block>
+<block type="Ultralight">
+	<address>62</address>
+	<data access=". ">62 32 39 38</data>
+</block>
+<block type="Ultralight">
+	<address>63</address>
+	<data access=". ">32 38 64 64</data>
+</block>
+<block type="Ultralight">
+	<address>64</address>
+	<data access=". ">63 64 31 62</data>
+</block>
+<block type="Ultralight">
+	<address>65</address>
+	<data access=". ">66 64 31 62</data>
+</block>
+<block type="Ultralight">
+	<address>66</address>
+	<data access=". ">31 64 31 37</data>
+</block>
+<block type="Ultralight">
+	<address>67</address>
+	<data access=". ">36 64 64 39</data>
+</block>
+<block type="Ultralight">
+	<address>68</address>
+	<data access=". ">36 33 65 33</data>
+</block>
+<block type="Ultralight">
+	<address>69</address>
+	<data access=". ">33 36 66 34</data>
+</block>
+<block type="Ultralight">
+	<address>70</address>
+	<data access=". ">62 35 64 35</data>
+</block>
+<block type="Ultralight">
+	<address>71</address>
+	<data access=". ">63 61 66 39</data>
+</block>
+<block type="Ultralight">
+	<address>72</address>
+	<data access=". ">61 64 65 35</data>
+</block>
+<block type="Ultralight">
+	<address>73</address>
+	<data access=". ">61 33 62 39</data>
+</block>
+<block type="Ultralight">
+	<address>74</address>
+	<data access=". ">62 36 30 33</data>
+</block>
+<block type="Ultralight">
+	<address>75</address>
+	<data access=". ">36 37 63 63</data>
+</block>
+<block type="Ultralight">
+	<address>76</address>
+	<data access=". ">65 62 37 64</data>
+</block>
+<block type="Ultralight">
+	<address>77</address>
+	<data access=". ">65 38 30 37</data>
+</block>
+<block type="Ultralight">
+	<address>78</address>
+	<data access=". ">64 63 33 64</data>
+</block>
+<block type="Ultralight">
+	<address>79</address>
+	<data access=". ">66 62 38 30</data>
+</block>
+<block type="Ultralight">
+	<address>80</address>
+	<data access=". ">64 32 62 33</data>
+</block>
+<block type="Ultralight">
+	<address>81</address>
+	<data access=". ">37 33 39 39</data>
+</block>
+<block type="Ultralight">
+	<address>82</address>
+	<data access=". ">33 37 32 35</data>
+</block>
+<block type="Ultralight">
+	<address>83</address>
+	<data access=". ">62 34 34 65</data>
+</block>
+<block type="Ultralight">
+	<address>84</address>
+	<data access=". ">34 33 64 30</data>
+</block>
+<block type="Ultralight">
+	<address>85</address>
+	<data access=". ">31 31 36 64</data>
+</block>
+<block type="Ultralight">
+	<address>86</address>
+	<data access=". ">37 32 31 34</data>
+</block>
+<block type="Ultralight">
+	<address>87</address>
+	<data access=". ">32 63 62 32</data>
+</block>
+<block type="Ultralight">
+	<address>88</address>
+	<data access=". ">62 66 38 31</data>
+</block>
+<block type="Ultralight">
+	<address>89</address>
+	<data access=". ">36 34 63 34</data>
+</block>
+<block type="Ultralight">
+	<address>90</address>
+	<data access=". ">62 63 63 34</data>
+</block>
+<block type="Ultralight">
+	<address>91</address>
+	<data access=". ">61 36 39 30</data>
+</block>
+<block type="Ultralight">
+	<address>92</address>
+	<data access=". ">64 39 34 39</data>
+</block>
+<block type="Ultralight">
+	<address>93</address>
+	<data access=". ">32 35 31 33</data>
+</block>
+<block type="Ultralight">
+	<address>94</address>
+	<data access=". ">61 37 32 33</data>
+</block>
+<block type="Ultralight">
+	<address>95</address>
+	<data access=". ">32 38 31 38</data>
+</block>
+<block type="Ultralight">
+	<address>96</address>
+	<data access=". ">31 64 61 32</data>
+</block>
+<block type="Ultralight">
+	<address>97</address>
+	<data access=". ">63 34 61 30</data>
+</block>
+<block type="Ultralight">
+	<address>98</address>
+	<data access=". ">66 30 35 65</data>
+</block>
+<block type="Ultralight">
+	<address>99</address>
+	<data access=". ">35 37 37 39</data>
+</block>
+<block type="Ultralight">
+	<address>100</address>
+	<data access=". ">32 33 32 32</data>
+</block>
+<block type="Ultralight">
+	<address>101</address>
+	<data access=". ">62 37 62 31</data>
+</block>
+<block type="Ultralight">
+	<address>102</address>
+	<data access=". ">34 30 34 61</data>
+</block>
+<block type="Ultralight">
+	<address>103</address>
+	<data access=". ">63 36 63 32</data>
+</block>
+<block type="Ultralight">
+	<address>104</address>
+	<data access=". ">31 63 38 62</data>
+</block>
+<block type="Ultralight">
+	<address>105</address>
+	<data access=". ">37 31 35 39</data>
+</block>
+<block type="Ultralight">
+	<address>106</address>
+	<data access=". ">36 61 30 63</data>
+</block>
+<block type="Ultralight">
+	<address>107</address>
+	<data access=". ">66 32 36 32</data>
+</block>
+<block type="Ultralight">
+	<address>108</address>
+	<data access=". ">65 30 34 34</data>
+</block>
+<block type="Ultralight">
+	<address>109</address>
+	<data access=". ">30 30 31 31</data>
+</block>
+<block type="Ultralight">
+	<address>110</address>
+	<data access=". ">35 31 64 39</data>
+</block>
+<block type="Ultralight">
+	<address>111</address>
+	<data access=". ">30 64 37 64</data>
+</block>
+<block type="Ultralight">
+	<address>112</address>
+	<data access=". ">39 65 39 38</data>
+</block>
+<block type="Ultralight">
+	<address>113</address>
+	<data access=". ">36 64 35 30</data>
+</block>
+<block type="Ultralight">
+	<address>114</address>
+	<data access=". ">66 32 65 63</data>
+</block>
+<block type="Ultralight">
+	<address>115</address>
+	<data access=". ">39 33 30 62</data>
+</block>
+<block type="Ultralight">
+	<address>116</address>
+	<data access=". ">63 61 61 35</data>
+</block>
+<block type="Ultralight">
+	<address>117</address>
+	<data access=". ">31 35 63 30</data>
+</block>
+<block type="Ultralight">
+	<address>118</address>
+	<data access=". ">34 62 36 34</data>
+</block>
+<block type="Ultralight">
+	<address>119</address>
+	<data access=". ">35 63 65 61</data>
+</block>
+<block type="Ultralight">
+	<address>120</address>
+	<data access=". ">32 37 38 36</data>
+</block>
+<block type="Ultralight">
+	<address>121</address>
+	<data access=". ">36 39 35 36</data>
+</block>
+<block type="Ultralight">
+	<address>122</address>
+	<data access=". ">66 32 34 66</data>
+</block>
+<block type="Ultralight">
+	<address>123</address>
+	<data access=". ">32 38 35 61</data>
+</block>
+<block type="Ultralight">
+	<address>124</address>
+	<data access=". ">62 66 64 37</data>
+</block>
+<block type="Ultralight">
+	<address>125</address>
+	<data access=". ">36 65 30 65</data>
+</block>
+<block type="Ultralight">
+	<address>126</address>
+	<data access=". ">62 38 31 33</data>
+</block>
+<block type="Ultralight">
+	<address>127</address>
+	<data access=". ">30 66 36 37</data>
+</block>
+<block type="Ultralight">
+	<address>128</address>
+	<data access=". ">39 39 37 65</data>
+</block>
+<block type="Ultralight">
+	<address>129</address>
+	<data access=". ">65 37 61 34</data>
+</block>
+<block type="Ultralight">
+	<address>130</address>
+	<data access=". ">64 65 64 35</data>
+</block>
+<block type="Ultralight">
+	<address>131</address>
+	<data access=". ">30 39 33 37</data>
+</block>
+<block type="Ultralight">
+	<address>132</address>
+	<data access=". ">66 31 61 62</data>
+</block>
+<block type="Ultralight">
+	<address>133</address>
+	<data access=". ">65 33 33 65</data>
+</block>
+<block type="Ultralight">
+	<address>134</address>
+	<data access=". ">62 65 65 62</data>
+</block>
+<block type="Ultralight">
+	<address>135</address>
+	<data access=". ">38 32 64 61</data>
+</block>
+<block type="Ultralight">
+	<address>136</address>
+	<data access=". ">38 36 62 34</data>
+</block>
+<block type="Ultralight">
+	<address>137</address>
+	<data access=". ">63 39 62 66</data>
+</block>
+<block type="Ultralight">
+	<address>138</address>
+	<data access=". ">65 65 62 66</data>
+</block>
+<block type="Ultralight">
+	<address>139</address>
+	<data access=". ">38 39 64 33</data>
+</block>
+<block type="Ultralight">
+	<address>140</address>
+	<data access=". ">30 32 36 61</data>
+</block>
+<block type="Ultralight">
+	<address>141</address>
+	<data access=". ">34 32 33 64</data>
+</block>
+<block type="Ultralight">
+	<address>142</address>
+	<data access=". ">35 63 30 39</data>
+</block>
+<block type="Ultralight">
+	<address>143</address>
+	<data access=". ">64 64 36 65</data>
+</block>
+<block type="Ultralight">
+	<address>144</address>
+	<data access=". ">63 36 35 62</data>
+</block>
+<block type="Ultralight">
+	<address>145</address>
+	<data access=". ">64 36 37 35</data>
+</block>
+<block type="Ultralight">
+	<address>146</address>
+	<data access=". ">65 32 65 65</data>
+</block>
+<block type="Ultralight">
+	<address>147</address>
+	<data access=". ">36 65 61 38</data>
+</block>
+<block type="Ultralight">
+	<address>148</address>
+	<data access=". ">37 33 64 63</data>
+</block>
+<block type="Ultralight">
+	<address>149</address>
+	<data access=". ">63 38 34 39</data>
+</block>
+<block type="Ultralight">
+	<address>150</address>
+	<data access=". ">62 35 66 36</data>
+</block>
+<block type="Ultralight">
+	<address>151</address>
+	<data access=". ">38 37 63 39</data>
+</block>
+<block type="Ultralight">
+	<address>152</address>
+	<data access=". ">31 61 38 32</data>
+</block>
+<block type="Ultralight">
+	<address>153</address>
+	<data access=". ">35 65 63 30</data>
+</block>
+<block type="Ultralight">
+	<address>154</address>
+	<data access=". ">31 30 66 38</data>
+</block>
+<block type="Ultralight">
+	<address>155</address>
+	<data access=". ">36 66 32 33</data>
+</block>
+<block type="Ultralight">
+	<address>156</address>
+	<data access=". ">38 63 35 62</data>
+</block>
+<block type="Ultralight">
+	<address>157</address>
+	<data access=". ">22 2C 20 22</data>
+</block>
+<block type="Ultralight">
+	<address>158</address>
+	<data access=". ">75 69 64 22</data>
+</block>
+<block type="Ultralight">
+	<address>159</address>
+	<data access=". ">3A 22 32 34</data>
+</block>
+<block type="Ultralight">
+	<address>160</address>
+	<data access=". ">34 38 32 35</data>
+</block>
+<block type="Ultralight">
+	<address>161</address>
+	<data access=". ">65 35 34 62</data>
+</block>
+<block type="Ultralight">
+	<address>162</address>
+	<data access=". ">31 38 35 30</data>
+</block>
+<block type="Ultralight">
+	<address>163</address>
+	<data access=". ">62 32 64 37</data>
+</block>
+<block type="Ultralight">
+	<address>164</address>
+	<data access=". ">38 31 62 66</data>
+</block>
+<block type="Ultralight">
+	<address>165</address>
+	<data access=". ">64 37 63 65</data>
+</block>
+<block type="Ultralight">
+	<address>166</address>
+	<data access=". ">63 33 37 61</data>
+</block>
+<block type="Ultralight">
+	<address>167</address>
+	<data access=". ">33 30 32 64</data>
+</block>
+<block type="Ultralight">
+	<address>168</address>
+	<data access=". ">37 63 66 34</data>
+</block>
+<block type="Ultralight">
+	<address>169</address>
+	<data access=". ">63 39 65 63</data>
+</block>
+<block type="Ultralight">
+	<address>170</address>
+	<data access=". ">61 63 39 30</data>
+</block>
+<block type="Ultralight">
+	<address>171</address>
+	<data access=". ">65 38 66 35</data>
+</block>
+<block type="Ultralight">
+	<address>172</address>
+	<data access=". ">65 36 34 66</data>
+</block>
+<block type="Ultralight">
+	<address>173</address>
+	<data access=". ">61 30 39 63</data>
+</block>
+<block type="Ultralight">
+	<address>174</address>
+	<data access=". ">36 36 33 32</data>
+</block>
+<block type="Ultralight">
+	<address>175</address>
+	<data access=". ">30 61 22 2C</data>
+</block>
+<block type="Ultralight">
+	<address>176</address>
+	<data access=". ">20 22 6E 61</data>
+</block>
+<block type="Ultralight">
+	<address>177</address>
+	<data access=". ">6D 65 22 3A</data>
+</block>
+<block type="Ultralight">
+	<address>178</address>
+	<data access=". ">22 34 31 36</data>
+</block>
+<block type="Ultralight">
+	<address>179</address>
+	<data access=". ">61 36 34 36</data>
+</block>
+<block type="Ultralight">
+	<address>180</address>
+	<data access=". ">39 36 65 22</data>
+</block>
+<block type="Ultralight">
+	<address>181</address>
+	<data access=". ">2C 20 22 73</data>
+</block>
+<block type="Ultralight">
+	<address>182</address>
+	<data access=". ">75 72 6E 61</data>
+</block>
+<block type="Ultralight">
+	<address>183</address>
+	<data access=". ">6D 65 22 3A</data>
+</block>
+<block type="Ultralight">
+	<address>184</address>
+	<data access=". ">22 34 64 37</data>
+</block>
+<block type="Ultralight">
+	<address>185</address>
+	<data access=". ">35 36 61 36</data>
+</block>
+<block type="Ultralight">
+	<address>186</address>
+	<data access=". ">35 37 61 36</data>
+</block>
+<block type="Ultralight">
+	<address>187</address>
+	<data access=". ">39 36 65 36</data>
+</block>
+<block type="Ultralight">
+	<address>188</address>
+	<data access=". ">66 37 36 36</data>
+</block>
+<block type="Ultralight">
+	<address>189</address>
+	<data access=". ">39 63 34 38</data>
+</block>
+<block type="Ultralight">
+	<address>190</address>
+	<data access=". ">37 22 2C 20</data>
+</block>
+<block type="Ultralight">
+	<address>191</address>
+	<data access=". ">22 75 73 65</data>
+</block>
+<block type="Ultralight">
+	<address>192</address>
+	<data access=". ">72 22 3A 22</data>
+</block>
+<block type="Ultralight">
+	<address>193</address>
+	<data access=". ">61 6D 75 6A</data>
+</block>
+<block type="Ultralight">
+	<address>194</address>
+	<data access=". ">65 7A 69 6E</data>
+</block>
+<block type="Ultralight">
+	<address>195</address>
+	<data access=". ">6F 76 33 22</data>
+</block>
+<block type="Ultralight">
+	<address>196</address>
+	<data access=". ">7D FE 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>197</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>198</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>199</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>200</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>201</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>202</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>203</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>204</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>205</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>206</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>207</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>208</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>209</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>210</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>211</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>212</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>213</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>214</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>215</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>216</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>217</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>218</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>219</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>220</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>221</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>222</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>223</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>224</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>225</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>226</address>
+	<data access=". " comment="(LOCK2-LOCK4, CHK)">00 00 00 BD</data>
+</block>
+<block type="Ultralight">
+	<address>227</address>
+	<data access=". " comment="(CFG, MIRROR, AUTH0)">04 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>228</address>
+	<data access=". " comment="(ACCESS)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>229</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>230</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>

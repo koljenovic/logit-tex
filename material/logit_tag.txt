@@ -1,0 +1,19 @@
+type: 'application/octet-stream'
+Payload length: ~735 bytes
+
+Payload data:
+
+    {
+        'lat':'43.9895212', 'lon':'18.180737', 'ts':'1511308824', 'sig':
+        '12947c41451df8ac4586ae9b211decb70087d7db0b1e25202a2b3ec07f267804
+        -d526ac641c20e282fe8bd12f7bdc9bcb2a5afcc65ef9b550e80b901c812c9a9f
+        -d87bb29828ddcd1bfd1b1d176dd963e336f4b5d5caf9ade5a3b9b60367cceb7d
+        -e807dc3dfb80d2b373993725b44e43d0116d72142cb2bf8164c4bcc4a690d949
+        -2513a72328181da2c4a0f05e57792322b7b1404ac6c21c8b71596a0cf262e044
+        -001151d90d7d9e986d50f2ec930bcaa515c04b645cea27866956f24f285abfd7
+        -6e0eb8130f67997ee7a4ded50937f1abe33ebeeb82da86b4c9bfeebf89d3026a
+        -423d5c09dd6ec65bd675e2ee6ea873dcc849b5f687c91a825ec010f86f238c5b',
+        'uid':'244825e54b1850b2d781bfd7cec37a302d7cf4c9ecac90e8f5e64fa09c-
+        66320a','name':'416a64696e', 'surname':'4d756a657a696e6f7669c487',
+        'user':'am***'
+    }
