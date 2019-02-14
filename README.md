@@ -1,3 +1,3 @@
 # logit-tex
-MSc Rad
-Copyright: Malik Koljenovic (c) 2018, ETF Sarajevo
+MSc Rad Draft
+Copyright: Malik Koljenovic (c) 2019, ETF Sarajevo
