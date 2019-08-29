@@ -7,12 +7,12 @@
 \usepackage{xcolor}
 \usepackage[pdftex]{graphicx}
 
-\usepackage{draftwatermark}
-\usepackage{minted}
+%\usepackage{draftwatermark}
+\usepackage[newfloat]{minted}
 \usepackage[sc]{mathpazo}
 \usepackage{mathrsfs}
 \usepackage{CJKutf8}
-\usepackage[nomain,acronym,xindy,toc,nonumberlist,automake]{glossaries}
+\usepackage[acronym,xindy,toc,nonumberlist,automake]{glossaries}
 \usepackage{dingbat}
 \usepackage{pmboxdraw}
 \usepackage{float}
@@ -77,7 +77,7 @@
 %\renewcommand{\tablename}{Tabela}
 %\renewcommand{\chaptername}{}
 %\renewcommand{\bibname}{Literatura}
-%\renewcommand\lstlistlistingname{Indeks listinga}
+\renewcommand\lstlistlistingname{Popis listinga}
 %\renewcommand\listfigurename{Indeks prikaza}
 %\renewcommand\listtablename{Indeks tabela}
 %\renewcommand\appendixname{Dodatak}
@@ -91,6 +91,9 @@
     \thispagestyle{empty}%
     \addtocounter{page}{-1}%
     \newpage}
+
+\newenvironment{code}{\captionsetup{type=listing}}{}
+\SetupFloatingEnvironment{listing}{name=Listing}
 
 %\SetWatermarkText{}
 %\SetWatermarkScale{0.8}
@@ -138,6 +141,7 @@
   \renewcommand{\lstlistingname}{Program}
   \renewcommand{\glossaryname}{Indeks pojmova}
   \renewcommand{\acronymname}{Indeks pojmova} 
+  \renewcommand{\lstlistlistingname}{Popis listinga}
 }
 
 %\addto\captionscroatian{\renewcommand{\listtablename}{Popis tabela}}
@@ -160,6 +164,7 @@
   	
    	\tableofcontents
 	\listoffigures
+	\lstlistoflistings
 	%\listoftables
     \glsaddall
 	\printglossaries
@@ -181,12 +186,12 @@
 	\input{chapters/c3-rjesenje}
 	\input{chapters/c4-tehnologija}
 	\input{chapters/c5-implementacija}
-	\input{appendices/a1-uputstvo}
 	\input{chapters/c5a-sigurnost}
 	\input{chapters/c6-zakljucak}
-%	\begin{appendices}
+	\begin{appendices}
+    	\input{appendices/a1-uputstvo}
 %		\input{appendices/a4-sourcecode}
-%	\end{appendices}
+	\end{appendices}
 	\backmatter
 	\bibliographystyle{IEEEtranETF}
 	\bibliography{main}

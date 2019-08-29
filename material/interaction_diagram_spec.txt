@@ -19,3 +19,20 @@ Student->UI: (1) Upali ekran
 UI->Slave: (2) Generiši SPIM
 Slave<-->Master: (3) **BUMP Event**
 Slave->Master: (3.1) Slanje SPIM
+
+title Provjera potpisa
+Korisnik->UI: (1) Provjeri potpise
+UI->LAPI: (2) Pošalji potpise
+LAPI->UI: (3) Vrati stanje
+UI->Korisnik: (4) Prikaži stanje
+
+title Pohrani potpise (SYNC)
+Korisnik->UI: (1) SYNC
+UI->LAPI: (2) Pošalji potpise
+LAPI->UI: (3) Vrati status
+UI->Korisnik: (4) Prikaži stanje
+
+Konceptualni model interakcije:
+
+
+https://sequencediagram.org/
