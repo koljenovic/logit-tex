@@ -1,4 +1,4 @@
-\chapter{Pregled korištenih tehnologija}
+\chapter{Pregled korištenih tehnologija} \label{chapter:tech}
 
 \section{NFC \textit{(en. near-field communication)}}
 NFC skup protokola omogućava uspostavu komunikacijskog kanala između dva uređaja koji se nalaze u neposrednoj blizini jedan drugog (1-4 cm) i razmjenu podataka između njih\cite{NFCProtocol}. Komunikacija se odvija na način da MASTER uređaj osluškuje signal na prijemniku i u slučaju detektovanje SLAVE signala uređaja pošiljaoca, propisanog istim standardom zaprima podatke i vrši obradu nad njima, komunikacija se u većini slučajeva odvija jednosmjerno kratkim standardiziranim porukama (NDEF), no moguće je ostvariti i half-duplex komunikaciju između uređaja, kao i razmjenu nestandardnih poruka, u kojem slučaju se sam korisnik mora pobrinuti za implementaciju kompletnog komunikacijskog protokola. Potpuni detalji implementacija dati su u referencama relevantnih standarda u nastavku tehničkog pregleda, odličnu sintezu detalja i implementacije daju Igoe, Coleman i Jepson\cite{Igoe2014}.
@@ -17,12 +17,12 @@ Mogućnosti navedene platforme dostatne su za ispunjenje navedenih funkcionalnih
 \end{itemize}
 
 \paragraph*{}
-Proces emulacije taga svodi se na što vjerniju reprezentaciju memorijskog prostora fizičkog uređaja u skadu sa relevantnim standardima, a opcionalno i dodatnih nestandardnih funkcionalnosti u vidu komunikacijskog protokola za korištenje naprednih funkcionalnosti date platforme. Kao minimum neophodan za standardnu komunikaciju NDEF porukama potrebno je emulirati generičko zaglavlje u obliku \textit{CC - capability container} i potpun zapis same NDEF poruke unutar korisničkog memorijskog prostora, potpun prikaz organizacije memorije NTAG216 platforme dat je na slici \ref{fig:ntag_mem}. Za emulaciju nestandardnih dijelova, poput zaštite čitanja korisničkog memorijskog prostora lozinkom ili emulaciju serijskog broja, za svaku različitu platformu neophodno je implementirati komunikacijski protokol u skladu sa proizvođačkom specifikacijom.
+Proces emulacije taga svodi se na što vjerniju reprezentaciju memorijskog prostora fizičkog uređaja u skadu sa relevantnim standardima, a opcionalno i dodatnih nestandardnih funkcionalnosti u vidu komunikacijskog protokola za korištenje naprednih funkcionalnosti date platforme. Kao minimum neophodan za standardnu komunikaciju NDEF porukama potrebno je emulirati generičko zaglavlje u obliku \textit{CC - capability container} i potpun zapis same NDEF poruke unutar korisničkog memorijskog prostora, potpun prikaz organizacije memorije NTAG216 platforme dat je na slici \ref{fig:ntag_mem}\cite{NTAG216}. Za emulaciju nestandardnih dijelova, poput zaštite čitanja korisničkog memorijskog prostora lozinkom ili emulaciju serijskog broja, za svaku različitu platformu neophodno je implementirati komunikacijski protokol u skladu sa proizvođačkom specifikacijom.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{material/ntag216-memory}
-    \caption{NTAG216 organizacija memorije\cite{NTAG216}}
+    \caption{NTAG216 organizacija memorije}
     \label{fig:ntag_mem}
 \end{figure}
 
@@ -42,7 +42,7 @@ Neki od ciljeva koje NDEF nastoji da ispuni:
 HCE je metod emuliranja virtuelnog identifikacijskog modula korisnika, u osnovi to je način zaobilaska hardverskih ograničenja (\textit{en. hack, workaround}) koja onemogućavaju direktan pristup SIM (\textit{en. Subscriber Identification Module}) modulu kod mobilnih telefonskih uređaja\cite{elenkov_2012}, ovakvo rješenje vuče korijene iz ekonomske realnosti sektora mobilnih komunikacija i kartičnog plaćanja, koja se najpreciznije može okarakterisati kao oligopol, naime Google je nastojao integrisati SIM karticu unutar Android operativnog sistema u vidu eSE (\textit{en. embedded Secure Element}) korištenjem već postojeće SIM kartice operatera a u svrhu razvoja Google Wallet rješenja, no to nije odgovaralo operaterima i odbili su suradnju, nakon toga Google iznalazi alternativne načine rješenja problema poput HCE\cite{randomoracle_2014}.
 
 \paragraph*{}
-HCE na Android OS radi, kako i naziv govori u CE (\textit{en. Card Emulation}) SLAVE modu, gdje se na svaki BUMP sa NFC čitačem odašilju pripremljeni podaci. Podaci koji se pri tome šalju moraju pratiti standard kartice koju žele emulirati i najčešće se vrši prijenos dokumenta ili datagrama unutar jednog ili više NDEF paketa. Logit koristi pristup prijenosa JSON formatiranog SPIM objekta \texttt{plain/text} unutar jednog NDEF paketa. Radi se o konceptu sa mnoštvom implementacijskih detalja, te zbog sažetosti za više detalja konsultujte oficijelnu dokumentaciju \url{https://developer.android.com/guide/topics/connectivity/nfc/hce}, dok je izvrstan logički prikaz sa primjerima dao Elenkov\cite{Elenkov2015}.
+HCE na Android OS radi, kako i naziv govori u CE (\textit{en. Card Emulation}) SLAVE modu, gdje se na svaki BUMP sa NFC čitačem odašilju pripremljeni podaci. Podaci koji se pri tome šalju moraju pratiti standard kartice koju žele emulirati i najčešće se vrši prijenos dokumenta ili datagrama unutar jednog ili više NDEF paketa. Logit koristi pristup prijenosa JSON formatiranog SPIM objekta \texttt{plain/text} unutar jednog NDEF paketa. Radi se o konceptu sa mnoštvom implementacijskih detalja, više detalja dostupno je u službenoj dokumentaciji\cite{androidhce_2018}, dok su izvrstan logički prikaz sa primjerima dali Coskun, Oz, Ozdenizci\cite{coskunAndroid}\cite{coskunNFC}, kao i Elenkov\cite{Elenkov2015} u znatno ažurnijem izdanju.
 
 \section{Ostalo}
 Dodatno koristi se Android arhitektura za dobavljanje geolokacije\cite{geoa} uz reverzno geokodiranje od strane OpenStreetMap Nominatim projekta\cite{nominatim}. Za potpisivanje i enkripciju korisničkih podataka koristi se RSA\cite{rivest1978method} kriptografija sa 2048 bit ključem. LAPI je Python flask API, kompletan listing koda dostupan je na GitHub u repozitorijima \texttt{koljenovic/logit} i \texttt{koljenovic/logit-node}.
